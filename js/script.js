@@ -61,3 +61,36 @@
   ];
 
 
+//   Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina
+// const carsBenzina = cars.filter((car, index, array) => {
+//     if (car.alimentazione === 'benzina') return true;
+//     else return false;
+//   });
+
+const carsBenzina = cars.filter(car => car.alimentazione === 'benzina');
+
+console.log("ALIMENTAZIONE BENZINA" , carsBenzina);
+
+
+
+// nel secondo solo le auto a diesel
+// const carsDiesel = cars.filter((car, index, array) => {
+//     if (car.alimentazione === 'diesel') return true;
+//     else return false;
+//   });
+
+const carsDiesel = cars.filter(car => car.alimentazione === 'diesel');
+
+console.log("ALIMENTAZIONE DIESEL" , carsDiesel);
+
+
+
+// nel terzo il resto delle auto
+// const carsDiverso = cars.filter((car, index, array) => {
+//     if (car.alimentazione !== 'diesel' && car.alimentazione !== 'benzina') return true;
+//     else return false;
+//   });
+
+const carsDiverso = cars.filter(car => car.alimentazione !== 'diesel' && car.alimentazione !== 'benzina');
+
+console.log("ALIMENTAZIONE NO BENZ/DIESEL" , carsDiverso);
